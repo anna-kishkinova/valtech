@@ -1,0 +1,67 @@
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 45px;
+  }
+  .about-us p {
+    font-size: 25px;
+  }
+  .content-section {
+    padding: 80px 0 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about-us {
+    padding: 90px 0;
+  }
+  .about-us p {
+    font-size: 25px;
+  }
+  .sticky + .about-us {
+    padding-top: 175px;
+  }
+  .main-footer {
+    text-align: center;
+  }
+  .social-block {
+    margin-top: 20px;
+  }
+  .social-block ul {
+    justify-content: center;
+  }
+  .content-section {
+    padding: 60px 0;
+  }
+  .main-footer {
+    padding: 15px 0;
+  }
+  .burger {
+    display: inline-block;
+  }
+  .main-header {
+    padding: 20px 0 10px;
+  }
+  .main-header .header-navigation {
+    visibility: hidden;
+    max-height: 0;
+  }
+  .main-header .header-navigation ul {
+    display: block;
+    height: auto;
+    padding-top: 20px;
+  }
+  .main-header .header-navigation ul li {
+    margin-bottom: 10px;
+  }
+  .main-header .header-navigation ul li a {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .service-icon {
+    min-width: 110px;
+  }
+  .person-description {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=media.css.map */

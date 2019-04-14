@@ -1,0 +1,331 @@
+/***** reset styles *******/
+body {
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+a,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+ol,
+ul {
+  list-style: none;
+}
+li {
+  list-style-type: none;
+}
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure {
+  margin: 0;
+  padding: 0;
+}
+input,
+button,
+button:focus,
+button:visited,
+button:active,
+.dropdown:focus,
+iframe,
+select,
+fieldset {
+  outline: none;
+  border: 0;
+}
+* {
+  box-sizing: border-box;
+}
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: none;
+}
+select::-ms-expand {
+  display: none;
+}
+/***** main styles *****/
+body,
+a {
+  font-family: 'Abel', sans-serif;
+  color: #202020;
+}
+h1 {
+  font-size: 58px;
+}
+h3 {
+  font-size: 28px;
+  color: #000000;
+}
+/*** contact us btn ***/
+.contact-btn {
+  background: #00C8FF;
+  border-radius: 10px;
+  font-size: 28px;
+  text-transform: capitalize;
+  display: inline-block;
+  color: #ffffff;
+  -webkit-box-shadow: 0px 6px 9px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 6px 9px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 6px 9px -5px rgba(0, 0, 0, 0.75);
+  transition: all 200ms;
+}
+.contact-btn.contact-btn-gradient {
+  background: linear-gradient(to bottom, #ffffff, #00C8FF);
+  padding: 2px;
+}
+.contact-btn.contact-btn-gradient span {
+  background: #00C8FF;
+  border-radius: 10px;
+  padding: 12px 56px;
+  display: inline-block;
+  color: #ffffff;
+}
+.contact-btn:hover {
+  -webkit-box-shadow: 0px 6px 11px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 6px 11px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 6px 11px -3px rgba(0, 0, 0, 0.75);
+}
+/*** header ***/
+.main-header {
+  z-index: 100;
+  transition: all 200ms;
+  padding: 60px 0 10px;
+  background: #ffffff;
+}
+.main-header .logo img {
+  max-height: 42px;
+}
+.main-header .header-nav-block {
+  position: relative;
+  text-align: right;
+}
+.main-header .header-navigation {
+  transition: max-height 0.5s ease-in-out;
+}
+.main-header .header-navigation ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 42px;
+}
+.main-header .header-navigation ul li {
+  margin-left: 40px;
+}
+.main-header .header-navigation ul li a {
+  font-size: 16px;
+  padding: 2px 0;
+}
+.main-header .header-navigation ul li a:hover {
+  color: #00C8FF;
+}
+.main-header .header-navigation ul li a.contact-btn {
+  padding: 2px 15px;
+  border: 1px solid #00C8FF;
+  box-shadow: none;
+}
+.main-header .header-navigation ul li a.contact-btn:hover {
+  background: #ffffff;
+  color: #00C8FF;
+  box-shadow: none;
+}
+.sticky.main-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(250, 250, 250, 0.5);
+}
+.sticky + .about-us {
+  padding-top: 247px;
+}
+/*** about-us section **/
+.about-us {
+  padding: 135px 0 90px;
+}
+.about-us h1 {
+  text-align: center;
+  margin-bottom: 65px;
+}
+.about-us p {
+  font-size: 32px;
+  line-height: 1.5;
+  color: #4F4F4F;
+  margin-bottom: 90px;
+}
+/*** service section ***/
+.content-section {
+  padding: 85px 0;
+}
+.section-title h4 {
+  padding: 0 15px;
+  z-index: 5;
+  background: #ffffff;
+  display: inline-block;
+  text-transform: uppercase;
+}
+.section-title:before {
+  border-top: 1px solid #C2C2C2;
+  content: "";
+  width: 100%;
+  display: block;
+  position: relative;
+  top: 15px;
+  z-index: -1;
+}
+.service-item {
+  display: flex;
+  padding: 10px 0 60px;
+}
+.service-item h3 {
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+.service-item p {
+  font-size: 16px;
+  color: #b2b2b2;
+  line-height: 1.5;
+}
+.service-item:hover {
+  background: rgba(250, 250, 250, 0.5);
+}
+.service-icon {
+  min-width: 165px;
+  text-align: center;
+  padding-top: 25px;
+}
+.service-icon img {
+  max-width: 100%;
+}
+/*** clients ***/
+.client-item {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.client-item a {
+  color: #b2b2b2;
+}
+.client-item a:hover,
+.client-item a:active,
+.client-item a:focus {
+  color: #000000;
+}
+/*** team ***/
+.person-block {
+  margin-bottom: 60px;
+}
+.person-block h3 {
+  color: #202020;
+  margin: 15px 0;
+}
+.person-block p {
+  color: #b2b2b2;
+}
+.person-icon {
+  text-align: center;
+}
+.person-icon img {
+  max-width: 100%;
+}
+/*** footer ***/
+.main-footer {
+  padding: 30px 0;
+  background: #F7F7F7;
+}
+.social-block ul {
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.social-block li {
+  margin-left: 40px;
+}
+.social-block li:first-child {
+  margin-left: 0;
+}
+.social-block li a {
+  color: #b2b2b2;
+}
+.social-block li a:hover,
+.social-block li a:focus,
+.social-block li a:active {
+  color: #000000;
+}
+/*** burger ***/
+.burger {
+  display: none;
+  border: 0;
+  background: none;
+  outline: 0;
+  padding: 0;
+  cursor: pointer;
+  border-bottom: 4px solid #00C8FF;
+  width: 28px;
+  transition: border-bottom 1s ease-in-out;
+  -webkit-transition: border-bottom 1s ease-in-out;
+  position: absolute;
+  top: -33px;
+  right: 0;
+}
+.burger::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.burger:before {
+  content: "";
+  display: block;
+  border-bottom: 4px solid #00C8FF;
+  width: 100%;
+  margin-bottom: 5px;
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+.burger:after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid #00C8FF;
+  width: 100%;
+  margin-bottom: 5px;
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+.burger-check {
+  display: none;
+}
+.burger-check:checked ~ .burger {
+  border-bottom: 4px solid transparent;
+  transition: border-bottom 0.8s ease-in-out;
+  -webkit-transition: border-bottom 0.8s ease-in-out;
+}
+.burger-check:checked ~ .burger:before {
+  transform: rotate(-405deg) translateY(1px) translateX(-3px);
+  -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+.burger-check:checked ~ .burger:after {
+  transform: rotate(405deg) translateY(-4px) translateX(-5px);
+  -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+.burger-check:checked ~ .header-navigation {
+  max-height: 500px;
+  visibility: visible;
+  transition: max-height 0.5s ease-in-out;
+}
+/*** end burger ***/
+/*# sourceMappingURL=style.css.map */
